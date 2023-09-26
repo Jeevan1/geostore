@@ -1,0 +1,65 @@
+.PageTopContainer {
+    height: 380px;
+    position: relative;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    background-position: 10% 10%;
+
+    .container {
+        h1 {
+            font-weight: 700;
+            font-size: 50px;
+            z-index: 1;
+        }
+
+        i {
+            font-weight: 600;
+            z-index: 1;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000000;
+        opacity: 0.4;
+    }
+
+    @media(max-width: 780px){
+        height: 320px;
+        text-align: center;
+        .container{
+            h1{
+                font-size: 40px;
+            }
+        }
+        i{
+            font-size: 14px;
+        }
+    }
+    @media(max-width: 500px){
+        height: 250px;
+        text-align: center;
+        .container{
+            h1{
+                font-size: 30px;
+            }
+        }
+        i{
+            font-size: 13px;
+        }
+    }
+    @media(max-width: 390px){
+        height: 220px;
+        margin-top: 20px !important;
+        text-align: center;
+        .container{
+            h1{
+                font-size: 22px;
+            }
+        }
+    }
+}

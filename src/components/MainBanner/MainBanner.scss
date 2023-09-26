@@ -1,0 +1,40 @@
+.MainBanner{
+    // height: 700px;
+    border-top: 3px solid lightgray;
+    border-style: dashed;
+    &__left{
+        height: 100%;
+        position: relative;
+        .inner-content{
+            display: flex;
+            align-items: start;
+            color: white;
+            overflow: hidden;
+            padding-left: 100px;q
+            h4{
+                font-weight: 700;
+                font-size: 50px;
+            }
+            span{
+                font-style: italic;
+            }
+        }
+        @media(max-width: 720px){
+            .inner-content{
+                h4{
+                    font-size: 30px;
+                }
+            }
+        }
+        @media(max-width: 720px){
+            .inner-content{
+                h4{
+                    font-size: 22px;
+                }
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

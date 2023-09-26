@@ -1,0 +1,60 @@
+.explore__area{
+    border-top: 3px solid lightgray;
+    border-style: dashed;
+    max-height: fit-content;
+    overflow: hidden;
+    &__left{
+        font-weight: 600;
+        font-size: 14px;
+        gap: 30px;
+        display: grid;
+        align-content: space-between;
+        h2{
+            font-size: 34px;
+        }
+        span,p{
+            color: gray;
+        }
+        .icon{
+            font-size: 35px;
+        }
+        @media(max-width: 480px){
+            gap: 15px;
+            font-size: 13px;
+        }
+    }
+    &__right{
+      &>div{
+        &>div{
+            padding: 0 20px 40px 20px;
+            &>div{
+                background-color: rgba($color: #000000, $alpha: 0.03);
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                line-height: 40px;
+                h4{
+                    font-weight: 700;
+                }
+                i{
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: gray;
+                }
+            }
+        }
+      }
+      &__img{
+        height: 260px !important;
+        width: 100%;
+        object-position: 100% 10% ;
+      }  
+      @media(max-width: 480px){
+        &__img{
+            height: 220px !important;
+        }
+      }
+    }
+}

@@ -1,0 +1,16 @@
+.Products{
+    border-top: 3px solid lightgray;
+    border-style: dashed;
+    @media(max-width: 380px){
+        .products__items{
+            .category{
+                h6{
+                    font-size: 16px;
+                }
+                span{
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}

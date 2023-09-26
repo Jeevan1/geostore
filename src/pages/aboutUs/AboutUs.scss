@@ -1,0 +1,134 @@
+.AboutUs {
+    border-top: 3px solid lightgray;
+    border-style: dashed;
+
+    &__skills {
+        .left__img {
+            height: 350px;
+        }
+
+        .right__content {
+            h2 {
+                font-weight: 700;
+            }
+
+            p {
+                color: gray;
+                font-weight: 600;
+            }
+
+            ul {
+                li {
+                    height: 45px;
+                    width: 45px;
+                    background: #000000;
+                    border-radius: 50%;
+
+                    .link {
+                        color: white;
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    &__teams {
+        border-top: 3px solid lightgray;
+        border-style: dashed;
+        text-align: center;
+        h2{
+            font-weight: 700;
+        }
+        i{
+            font-weight: 500;
+            color: gray;
+            font-size: 14px;
+        }
+        &__items{
+            .team__item{
+                padding: 0 10px;
+                &__top{
+                    position: relative;
+                    
+                    &:hover{
+                        ul{
+                            opacity: 1;
+                        }
+                    }
+                    img{
+                        height: 320px;
+                    }
+                }
+                
+                ul{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    background-color: rgba($color: #1c1c1c, $alpha: 0.95);
+                    display: flex;
+                    opacity: 0;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 15px !important;
+                    transition: 0.2s;
+                    li{
+                        height: 45px;
+                        width: 45px;
+                        background-color: white;
+                        border-radius: 50%;
+                        transition: 0.3s;
+                        .link{
+                            height: 100%;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        &:hover{
+                            background-color: #434242;
+                            .link{
+                                color: white !important;
+                            }
+                        }
+                    }
+                }
+                &__content{
+                    padding: 20px 0;
+                    h4{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    &__services {
+        border-top: 3px solid lightgray;
+        border-style: dashed;
+        text-align: center;
+        h2{
+            font-weight: 700;
+        }
+        i{
+            font-weight: 500;
+            color: gray;
+            font-size: 14px;
+        }
+    }
+    @media(max-width: 480px){
+        .left__img{
+            height: fit-content;
+            padding-bottom: 20px;
+        }
+        img{
+            height: 200px !important;
+            object-fit: contain;
+        }
+    }
+}

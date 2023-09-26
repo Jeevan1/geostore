@@ -1,0 +1,34 @@
+.banner__item{
+    height: 300px;
+    position: relative;
+    transition: 3s;
+    
+    .inner-content{
+        color: white;
+        h4{
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+        span{
+            font-style: italic;
+        }
+    }
+    .hover-content{
+        display: none;
+        
+        .inner{
+            h4,p{
+                color: white;
+            }
+            
+        }
+    }
+    &:hover .hover-content{
+        display: flex;
+    }
+}
+@media(max-width: 480px){
+    .banner__item{
+        height: 250px;
+    }
+}
