@@ -39,7 +39,7 @@ function Navbar() {
             <NavLink to={''}>
               <figure className="">
                 <img
-                  src="../../assets/img/logo/logo1.png"
+                  src="../../../src/assets/img/logo/logo1.png"
                   className="logo__img"
                   alt=""
                 />
