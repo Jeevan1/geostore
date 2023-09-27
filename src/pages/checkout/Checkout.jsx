@@ -12,32 +12,32 @@ function Checkout() {
   return (
     <div className="Checkout ">
       <div className="row">
-        <div className="col-lg-7 py-5">
+        <div className="col-lg-7 col-sm-7 order__left py-5">
           <div className="Checkout__left">
             <div className="container">
               <h4 className="pb-3">Checkout Page</h4>
               <form action="" className="payenment__form">
                 <div className="payenment__method">
                   <div className="row">
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 col-sm-6 col-6 mb-3">
                       <img
                         src="../../../src/assets/img/logo/payenment/esewa.png"
                         alt=""
                       />
                     </div>
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 col-sm-6 col-6 mb-3">
                       <img
                         src="../../../src/assets/img/logo/payenment/amazon.png"
                         alt=""
                       />
                     </div>
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 col-sm-6 col-6 mb-3">
                       <img
                         src="../../../src/assets/img/logo/payenment/gpay.png"
                         alt=""
                       />
                     </div>
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 col-sm-6 col-6 mb-3">
                       <img
                         src="../../../src/assets/img/logo/payenment/paypal.png"
                         alt=""
@@ -136,7 +136,7 @@ function Checkout() {
             </div>
           </div>
         </div>
-        <div className="col-lg-5 ">
+        <div className="col-lg-5 col-sm-5 order__right ">
           <div className="Checkout__right py-5">
             <div className="container ">
               <div className="cart__items py-2">
