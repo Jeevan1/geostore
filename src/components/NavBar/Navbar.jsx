@@ -36,7 +36,7 @@ function Navbar() {
       <div className="container">
         <nav className="d-flex justify-content-between align-items-center">
           <div className="Navbar__logo">
-            <NavLink to={''}>
+            <NavLink to={""}>
               <figure className="">
                 <img
                   src="../../../src/assets/img/logo/logo1.png"
@@ -125,6 +125,12 @@ function Navbar() {
                 </div>
               </li>
             </ul>
+          </div>
+          <div className="mobile__cart">
+            <div className="" onClick={() => dispatch(activeCart())}>
+              <AiOutlineShoppingCart className="icon link fs-3" />
+              <span className="text-dark">{cartItem.length}</span>
+            </div>
           </div>
         </nav>
       </div>

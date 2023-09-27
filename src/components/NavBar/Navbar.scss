@@ -93,6 +93,9 @@
         }
     }
 }
+.mobile__cart{
+    display: none;
+}
 
 @media(max-width: 1000px){
     .Navbar{
@@ -113,5 +116,8 @@
         }
         .navLinks{
             display: none;
+        }
+        .mobile__cart{
+            display: block;
         }
     }
