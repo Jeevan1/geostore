@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import { fetchApiData } from "./store/slice/productSlice";
 import Cart from "./components/cart/Cart";
 import Popup from "./components/popup/Popup";
+import Checkout from "./pages/checkout/Checkout";
 
 function App() {
   const dispatch = useDispatch();
@@ -68,6 +69,10 @@ function App() {
         {
           path: "/products/category/women",
           element: <Products categories = {`women's clothing`}/>,
+        },
+        {
+          path: "checkout",
+          element: <Checkout />,
         },
       ],
     },

@@ -5,6 +5,7 @@ import "./Cart.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { noActiveCart } from "../../store/slice/stateSlice";
 import { deleteCart, updatedCart } from "../../store/slice/cartSlice";
+import { Link } from "react-router-dom";
 
 function Cart() {
   const dispatch = useDispatch();
@@ -85,7 +86,9 @@ function Cart() {
               </p>
             </div>
             <div className="checkout text-center pb-3">
-              <button className="border border-dark py-2">Checkout</button>
+              <button className="border border-dark py-2">
+                <Link to={'/checkout'} className="link">Checkout</Link>
+              </button>
             </div>
           </div>
         </div>
