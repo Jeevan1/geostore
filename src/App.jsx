@@ -63,6 +63,10 @@ function App() {
           element: <Products categories={'all'}/>,
         },
         {
+          path: "/products/:search",
+          element: <Products categories={'all'}/>,
+        },
+        {
           path: "/products/category/men",
           element: <Products categories = {`men's clothing`}/>,
         },

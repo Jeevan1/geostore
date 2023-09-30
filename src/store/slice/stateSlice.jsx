@@ -5,6 +5,7 @@ const initialState = {
         active: false,
         item: '',
     },
+    search_bar: false,
     
 }
 
@@ -21,10 +22,14 @@ const stateSlice = createSlice({
         itemAddedCartPopup(state,action) {
             const {active, item} = action.payload;
             return {...state, cartAddedPopUp:{active,item}}
-        }
+        },
+        activeSearch(state, action){
+            const active = action.payload;
+            return {...state, search_bar: active};
+        },
     }
 });
 
 export default stateSlice.reducer;
 
-export const {activeCart, noActiveCart, itemAddedCartPopup} = stateSlice.actions;
+export const {activeCart, noActiveCart, itemAddedCartPopup, activeSearch} = stateSlice.actions;

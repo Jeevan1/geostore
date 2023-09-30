@@ -6,6 +6,74 @@
             font-weight: 600;
             cursor: pointer;
         }
+        .product__search{
+            position: relative ;
+            &__input{
+                position: absolute;
+                width: 300px;
+                bottom: -110%;
+                right: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                justify-content: space-between;
+                box-shadow: 0 0 10px gray;
+                background-color: white;
+                input{
+                    height: 40px;
+                    border: 0;
+                    width: 100%;
+                    outline: none;
+                    font-style: italic;
+                }
+                .icon{
+                    background-color: rgb(48, 47, 47);
+                    height: 40px;
+                    width: 50px;
+                    padding: 8px;
+                    color: white;
+                    transition: 0.2s;
+                    box-shadow: 3px 0 10px gray;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+            .show__input{
+                animation: show 0.7s ease-in;
+            }
+            @keyframes show {
+                0%{
+                    bottom: 0;
+                    opacity: 0;
+                    width: 0;
+                }
+                100%{
+                    bottom: -110%;
+                    opacity: 1;
+                    width: 300px;
+                }
+            }
+            .hide__input {
+                animation: hide 0.7s ease-out forwards; /* Add "forwards" to keep the final state of the animation */
+            }
+        
+            @keyframes hide {
+                0% {
+                    bottom: -110%;
+                    opacity: 1;
+                    width: 300px;
+                }
+                100% {
+                    bottom: 0;
+                    opacity: 0;
+                    width: 0;
+                    z-index: -1;
+                }
+            }
+        }
         .cart{
             position: relative;
             span{

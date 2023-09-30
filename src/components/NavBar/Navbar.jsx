@@ -2,19 +2,23 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { BiSearch } from "react-icons/bi";
 
 import "./Navbar.scss";
 import Cart from "../cart/Cart";
 import { useDispatch, useSelector } from "react-redux";
-import { activeCart } from "../../store/slice/stateSlice";
+import { activeCart, activeSearch } from "../../store/slice/stateSlice";
 import { uniqueProducts } from "../../store/slice/productSlice";
+import input from "../formInput/FormInput";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
   const [active, setActive] = useState(false);
+  const [searchVal, setSearchVal] = useState("");
 
   const dispatch = useDispatch();
   const cartItem = useSelector((state) => state.cartItem);
+  const search = useSelector((state) => state.states.search_bar);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -114,6 +118,28 @@ function Navbar() {
                 <NavLink to={"/"} className={"link"}>
                   Explore
                 </NavLink>
+              </li>
+              <li className="nav-link product__search">
+                <BiSearch
+                  className="icon link fs-3"
+                  onClick={() => dispatch(activeSearch(!search))}
+                />
+                <div
+                  className={`product__search__input ${
+                    search ? "show__input" : "hide__input"
+                  } `}
+                >
+                  <input
+                    type={"text"}
+                    placeholder={"Search products..."}
+                    name={"search"}
+                    className="px-2"
+                    onChange={(e) => setSearchVal(e.target.value)}
+                  />
+                  <Link to={`/products/${searchVal}`} className="link">
+                    <BiSearch className="icon fs-4" onClick={() => dispatch(activeSearch(!search))}/>
+                  </Link>
+                </div>
               </li>
               <li
                 className="nav-link cart"
