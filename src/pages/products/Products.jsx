@@ -4,16 +4,20 @@ import PageTopContainer from "../../components/pageTopContainer/PageTopContainer
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { PaginatedItems } from "../../components/pagination/Pagination";
+import { fetchApiData } from "../../store/slice/reelsSlice";
 
 function Products({ categories }) {
   const allProducts = useSelector((state) => state.products.products);
+  const allReels = useSelector((state) => state.reels.reels);
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const [filteredReels, setFilteredReels] = useState(allReels);
   const [topContent, setTopContent] = useState(true);
 
   const { search } = useParams();
 
   // Filter products based on the selected categories when the component mounts
   useEffect(() => {
+    fetchApiData();
     const updateProducts = (val) => {
       const filterProduct = allProducts.filter((item) =>
         item.title.toLowerCase().includes(search.toLowerCase())
@@ -52,6 +56,9 @@ function Products({ categories }) {
       {/* end */}
 
       <div className="Products__section py-5">
+        {
+          console.log(allReels)
+        }
         <div className="container">
           <div className="section__heading">
             <h2>Our Latest Products</h2>

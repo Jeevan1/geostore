@@ -1,0 +1,78 @@
+{
+  "reels": [
+    {
+      "id": 1,
+      "user": {
+        "username": "sample_user",
+        "profile_picture": "https://example.com/profile_pic.jpg"
+      },
+      "video_url": "https://example.com/reel1.mp4",
+      "likes": 1200,
+      "comments": [
+        {
+          "user": "commenter1",
+          "text": "Awesome!"
+        },
+        {
+          "user": "commenter2",
+          "text": "Great content!"
+        }
+      ],
+      "timestamp": "2024-01-19T12:30:00Z"
+    },
+    {
+      "id": 2,
+      "user": {
+        "username": "another_user",
+        "profile_picture": "https://example.com/another_profile_pic.jpg"
+      },
+      "video_url": "https://example.com/reel2.mp4",
+      "likes": 800,
+      "comments": [
+        {
+          "user": "commenter3",
+          "text": "Nice one!"
+        }
+      ],
+      "timestamp": "2024-01-19T13:45:00Z"
+    }
+  ],
+  "reel": [
+    {
+      "id": "1",
+      "user": {
+        "username": "sample_user",
+        "profile_picture": "https://example.com/profile_pic.jpg"
+      },
+      "video_url": "https://example.com/reel1.mp4",
+      "likes": 1200,
+      "comments": [
+        {
+          "user": "commenter1",
+          "text": "Awesome!"
+        },
+        {
+          "user": "commenter2",
+          "text": "Great content!"
+        }
+      ],
+      "timestamp": "2024-01-19T12:30:00Z"
+    },
+    {
+      "id": "2",
+      "user": {
+        "username": "another_user",
+        "profile_picture": "https://example.com/another_profile_pic.jpg"
+      },
+      "video_url": "https://example.com/reel2.mp4",
+      "likes": 800,
+      "comments": [
+        {
+          "user": "commenter3",
+          "text": "Nice one!"
+        }
+      ],
+      "timestamp": "2024-01-19T13:45:00Z"
+    }
+  ]
+}

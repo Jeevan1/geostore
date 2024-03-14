@@ -87,7 +87,9 @@ function Cart() {
             </div>
             <div className="checkout text-center pb-3">
               <button className="border border-dark py-2">
-                <Link to={'/checkout'} className="link">Checkout</Link>
+                <Link to={"/checkout"} className="link">
+                  Checkout
+                </Link>
               </button>
             </div>
           </div>

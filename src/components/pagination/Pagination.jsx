@@ -34,8 +34,7 @@ function Items({ currentItems, allProducts }) {
   return (
     <>
       <div className="row">
-        {currentItems &&
-          allProducts.map((item, idx) => (
+        {currentItems ? allProducts.map((item, idx) => (
             <div className="col-lg-4 py-3">
               <div className="product__item shadow p-3" key={idx}>
                 <div className="product__item__top">
@@ -93,7 +92,8 @@ function Items({ currentItems, allProducts }) {
                 </div>
               </div>
             </div>
-          ))}
+          )):
+          <h1>No products found 🥲🥲</h1>}
       </div>
     </>
   );
