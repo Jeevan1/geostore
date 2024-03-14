@@ -13,7 +13,7 @@ function MainBanner() {
           <div className="col-lg-6 py-3">
             <div className="MainBanner__left ">
               <img
-                src="../../../src/assets/img/bg/left-banner-image.jpg"
+                src="../assets/img/bg/left-banner-image.jpg"
                 alt=""
               />
               <div className="inner-content">

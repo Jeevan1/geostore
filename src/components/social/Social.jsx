@@ -18,37 +18,37 @@ function Social() {
         <div className="social__media__images pt-5">
           <div className="row">
             <Image
-              img={"../../../src/assets/img/bg/explore__area__right__01.jpg"}
+              img={"../assets/img/bg/explore__area__right__01.jpg"}
               title={"Fashion"}
               link={""}
               icon={<TbBrandMedium className="icon" />}
             />
             <Image
-              img={"../../../src/assets/img/bg/left-banner-image.jpg"}
+              img={"../assets/img/bg/left-banner-image.jpg"}
               title={"New"}
               link={""}
               icon={<TbBrandMedium className="icon" />}
             />
             <Image
-              img={"../../../src/assets/img/bg/right-banner-image-01.jpg"}
+              img={"../assets/img/bg/right-banner-image-01.jpg"}
               title={"Bag"}
               link={""}
               icon={<TbBrandMedium className="icon" />}
             />
             <Image
-              img={"../../../src/assets/img/bg/right-banner-image-02.jpg"}
+              img={"../assets/img/bg/right-banner-image-02.jpg"}
               title={"Clothes"}
               link={""}
               icon={<TbBrandMedium className="icon" />}
             />
             <Image
-              img={"../../../src/assets/img/bg/right-banner-image-03.jpg"}
+              img={"../assets/img/bg/right-banner-image-03.jpg"}
               title={"Fashion"}
               link={""}
               icon={<TbBrandMedium className="icon" />}
             />
             <Image
-              img={"../../../src/assets/img/bg/right-banner-image-04.jpg"}
+              img={"../assets/img/bg/right-banner-image-04.jpg"}
               title={"Fashion"}
               link={""}
               icon={<TbBrandMedium className="icon" />}

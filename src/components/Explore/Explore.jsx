@@ -52,12 +52,12 @@ function Explore() {
                 </div>
                 <div className="col-lg-6">
                   <div className="explore__area__right__img">
-                    <img src="../../../src/assets/img/bg/explore__area__right__01.jpg" alt="" />
+                    <img src="../assets/img/bg/explore__area__right__01.jpg" alt="" />
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="second-image explore__area__right__img">
-                    <img src="../../../src/assets/img/bg/right-banner-image-04.jpg" alt="" />
+                    <img src="../assets/img/bg/right-banner-image-04.jpg" alt="" />
                   </div>
                 </div>
                 <div className="col-lg-6">

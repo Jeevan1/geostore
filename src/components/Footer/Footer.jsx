@@ -19,7 +19,7 @@ function Footer() {
           <div className="row border-bottom pb-4">
             <div className="col-lg-3">
               <div className="logo">
-                <img src="../../../src/assets/img/logo/logo2.png" alt="" />
+                <img src="../assets/img/logo/logo2.png" alt="" />
               </div>
               <ul>
                 <FooterLink value={"Kathmandu, Budhanilkantha-13, Nepal"} />

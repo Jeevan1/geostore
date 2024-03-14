@@ -5,7 +5,7 @@ export const bannerItem = [
         desc: "Best Clothes For Women",
         detail: "Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.",
         link: '/products/category/women',
-        img: '../../../src/assets/img/bg/right-banner-image-01.jpg',
+        img: '../assets/img/bg/right-banner-image-01.jpg',
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const bannerItem = [
         desc: "Best Clothes For Men",
         detail: "Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.",
         link: '/products/category/men',
-        img: '../../../src/assets/img/bg/right-banner-image-02.jpg',
+        img: '../assets/img/bg/right-banner-image-02.jpg',
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ export const bannerItem = [
         desc: "Best Clothes For Kids",
         detail: "Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.",
         link: '',
-        img: '../../../src/assets/img/bg/right-banner-image-03.jpg',
+        img: '../assets/img/bg/right-banner-image-03.jpg',
     },
     {
         id: 4,
@@ -29,6 +29,6 @@ export const bannerItem = [
         desc: "Best Trend Accessories",
         detail: "Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.",
         link: '/products',
-        img: '../../../src/assets/img/bg/right-banner-image-04.jpg',
+        img: '../assets/img/bg/right-banner-image-04.jpg',
     },
 ]
